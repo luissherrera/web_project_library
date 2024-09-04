@@ -30,10 +30,10 @@
               <a class="nav__link" href="#events">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Conviértete en miembro</a>
+              <a class="nav__link" href="#members">Conviértete en miembro</a>
             </li>
             <li>
-              <a class="nav__link">Contactos</a>
+              <a class="nav__link" href="#contact">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -179,7 +179,7 @@
               nuestra conferencia busca cambiar esa noción y probar que no ha
               sido así desde, al menos, el siglo XVII.
             </p>
-            <a href="#" class="events__more">Más eventos &rarr;</a>
+            <a href="#" class="events__more">Más eventos </a>
           </div>
           <!-- Comienza a crear la composición aquí -->
           <div class="events__cover">
@@ -238,7 +238,7 @@
           </div>
         </section>
         <!-- se agrega el codigo de la etapa 3  -->
-        <section class="membership">
+        <section class="membership" id="members">
           <h2 class="membership__title">
             ¡Convertirse en miembro es muy fácil!
           </h2>
@@ -295,15 +295,20 @@
             </li>
           </ul>
         </section>
-        <!-- se agrega la etapa final -->
-        <footer class="footer__columns">
-          <!-- Primera columna -->
+      </main>
+      <!-- se agrega la etapa final -->
+      <footer class="footer" id="contact">
+        <!-- Primera columna -->
+        <div class="footer__columns">
           <div class="footer__column">
-            <img class="footer__logo" src="./images/logo.svg" alt="Logo" />
+            <img
+              class="footer__logo"
+              src="./images/logo_white.svg"
+              alt="Logo"
+            />
           </div>
-
           <!-- Segunda columna -->
-          <div class="footer__column_content_hours">
+          <div class="footer__column footer__column_content_hours">
             <h4 class="footer__column-heading">Horario de apertura</h4>
             <ul class="footer__list">
               <li class="footer__list-item">Lunes a Viernes: 9 a.m. - 8 p.m</li>
@@ -315,29 +320,34 @@
 
           <!-- Tercera columna -->
 
-          <div class="footer__column_content_social">
+          <div class="footer__column footer__column_content_social">
             <h4 class="footer__column-heading">Redes Sociales</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <img src="./images/facebook_white.svg" />
-                <a href="https://facebook.com" class="footer__link">Facebook</a>
+                <div class="footer__column-link">
+                  Facebook
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="logo facebook"
+                  />
+                </div>
               </li>
               <li class="footer__list-item">
-                <img src="./images/instagram_white.svg" />
-
-                <a href="https://instagram.com" class="footer__link"
-                  >Instagram</a
-                >
+                <div class="footer__column-link">
+                  Instagram
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="logo instagram"
+                  />
+                </div>
               </li>
             </ul>
           </div>
-          <p class="footer__copyright">© 2024 Luis Eduardo Herrera</p>
-        </footer>
-      </main>
+        </div>
+        <p class="footer__copyright">© 2024 Luis Eduardo Herrera</p>
+      </footer>
     </div>
   </body>
 </html>
-
-
-
-
