@@ -321,11 +321,15 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .step {
   /* Agrega estilos */
-  flex-basis: 220px;
+
+  width: 220px;
+  height: 40px;
+  flex-basis: auto;
 }
 
 .step__title {
