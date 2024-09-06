@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Ismael Cruz Bustillos" />
+    <meta name="description" content="Primera parte del segundo sprint" />
     <title>Biblioteca Triple Peaks</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
@@ -11,7 +13,6 @@
 
   <body>
     <div class="page">
-      <!-- Envuelve todo el contenido de la página en un nuevo div con la clase page Recuerda agregar la etiqueta de cierre -->
       <header class="header">
         <nav class="nav">
           <img
@@ -19,24 +20,24 @@
             alt="Logotipo de la Biblioteca Triple Peaks"
             class="nav__logo"
           />
-          <!-- Se supone que poner enlaces de navegación en una lista es la mejor práctica para escribir el código semántico, ya que permite a los lectores de pantalla hacer una pausa entre cada enlace en lugar de leer todos los enlaces como una oración. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#staff"
-                >Los preferidos de nuestro staff</a
-              >
+              <a class="nav__link" href="#staff">
+                Los preferidos de nuestro staff
+              </a>
             </li>
             <li>
-              <a class="nav__link" href="#events">Eventos</a>
+              <a class="nav__link" href="#events"> Eventos</a>
             </li>
             <li>
-              <a class="nav__link" href="#members">Conviértete en miembro</a>
+              <a class="nav__link" href="#membership">Conviértete en miembro</a>
             </li>
             <li>
-              <a class="nav__link" href="#contact">Contactos</a>
+              <a class="nav__link" href="#footer">Contactos</a>
             </li>
           </ul>
         </nav>
+
         <div class="header__content">
           <div>
             <h1 class="header__title">
@@ -49,23 +50,21 @@
               estudiantes!
             </p>
           </div>
+
           <img
             src="./images/inside_the_library.png"
             alt="Ilustración 'Dentro de la biblioteca'"
             class="header__image"
           />
         </div>
+
         <div class="header__footer">
           <p class="header__address">Triple Peaks, 200 Success Avenue</p>
         </div>
       </header>
 
       <main class="content">
-        <section class="staff" id="staff">
-          <!-- --------------------------------------------------------------- -->
-          <!--        No descomentar hasta la etapa final del proyecto.            -->
-          <!-- --------------------------------------------------------------- -->
-
+        <section id="staff" class="staff">
           <h2 class="staff__title">Los preferidos de nuestro staff</h2>
           <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
           <ul class="staff__cards">
@@ -143,7 +142,7 @@
             </li>
           </ul>
         </section>
-        <!-- se agrega el codigo del proyecto 3 etapa 2  -->
+
         <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Próximos eventos:</h2>
@@ -179,66 +178,60 @@
               nuestra conferencia busca cambiar esa noción y probar que no ha
               sido así desde, al menos, el siglo XVII.
             </p>
-            <a href="#" class="events__more">Más eventos </a>
+            <a href="#" class="events__more">Más eventos &rarr;</a>
           </div>
-          <!-- Comienza a crear la composición aquí -->
+
           <div class="events__cover">
-            <img
-              class="events__image"
-              src="images/cafe.png"
-              alt="imagen de un cafe"
-            />
-            <!-- feyman -->
+            <!-- Añadido el nuevo div con clase events__content -->
+            <img src="./images/cafe.png" alt="Cafe" class="events__image" />
             <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
+                src="./images/person_feynman.png"
+                alt="Portrait of Joan Feynman"
                 class="person__image person__image_size_l"
-                src="images/person_feynman.png"
-                alt="foto"
               />
             </div>
-            <!-- Margaret Burbidge -->
-            <div class="person person_name_burbidge">
-              <p class="person__caption">Margaret Burbidge</p>
-              <img
-                class="person__image person__image_size_m"
-                src="images/person_burbidge.png"
-                alt="foto"
-              />
-            </div>
-            <!-- Annie Jump Cannon -->
-            <div class="person person_name_cannon">
-              <p class="person__caption person__caption_down">
-                Annie Jump Cannon
-              </p>
-              <img
-                class="person__image person__image_size_m"
-                src="images/person_cannon.png"
-                alt="foto"
-              />
-            </div>
-            <!-- Maria Mitchell  -->
-            <div class="person person_name_mitchell">
-              <p class="person__caption person__caption_down">Maria Mitchell</p>
-              <img
-                class="person__image person__image_size_s"
-                src="images/person_mitchell.png"
-                alt="foto"
-              />
-            </div>
-            <!-- Jill Tarter -->
+
             <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
               <img
+                src="./images/person_tarter.png"
+                alt="Portrait of Jill Tarter"
                 class="person__image person__image_size_m"
-                src="images/person_tarter.png"
-                alt="foto"
               />
+            </div>
+
+            <div class="person person_name_mitchell">
+              <img
+                src="./images/person_mitchell.png"
+                alt="Portrait of Maria Mitchell"
+                class="person__image person__image_size_s"
+              />
+              <p class="person__caption">Maria Mitchell</p>
+            </div>
+
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burbidge</p>
+              <img
+                src="./images/person_burbidge.png"
+                alt="Portrait of Margaret Burbidge"
+                class="person__image person__image_size_m"
+              />
+            </div>
+
+            <div class="person person_name_cannon">
+              <img
+                src="./images/person_cannon.png"
+                alt="Portrait of Annie Jump Cannon"
+                class="person__image person__image_size_m"
+              />
+              <p class="person__caption">Annie Jump Cannon</p>
             </div>
           </div>
         </section>
-        <!-- se agrega el codigo de la etapa 3  -->
-        <section class="membership" id="members">
+
+        <section class="membership" id="membership">
           <h2 class="membership__title">
             ¡Convertirse en miembro es muy fácil!
           </h2>
@@ -296,57 +289,55 @@
           </ul>
         </section>
       </main>
-      <!-- se agrega la etapa final -->
-      <footer class="footer" id="contact">
-        <!-- Primera columna -->
+
+      <footer class="footer" id="footer">
         <div class="footer__columns">
           <div class="footer__column">
             <img
-              class="footer__logo"
               src="./images/logo_white.svg"
-              alt="Logo"
+              alt="logo"
+              class="footer__logo"
             />
           </div>
-          <!-- Segunda columna -->
           <div class="footer__column footer__column_content_hours">
-            <h4 class="footer__column-heading">Horario de apertura</h4>
+            <h3 class="footer__column-heading">Horario de apertura</h3>
             <ul class="footer__list">
-              <li class="footer__list-item">Lunes a Viernes: 9 a.m. - 8 p.m</li>
               <li class="footer__list-item">
-                Sábados y domingos: 10 a.m. - 4 p.m.
+                Lunes a viernes: 9 a.m. - 8 p.m.
+              </li>
+              <li class="footer__list-item">
+                Sábados y domingos: 10 a.m. - 6 p.m.
               </li>
             </ul>
           </div>
 
-          <!-- Tercera columna -->
-
           <div class="footer__column footer__column_content_social">
-            <h4 class="footer__column-heading">Redes Sociales</h4>
+            <h3 class="footer__column-heading">Redes sociales</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <div class="footer__column-link">
-                  Facebook
+                <a href="#" class="footer__column-link">
                   <img
+                    src="images/facebook_white.svg"
+                    alt="Facebook"
                     class="footer__social-icon"
-                    src="./images/facebook_white.svg"
-                    alt="logo facebook"
                   />
-                </div>
+                  Facebook
+                </a>
               </li>
               <li class="footer__list-item">
-                <div class="footer__column-link">
-                  Instagram
+                <a href="#" class="footer__column-link">
                   <img
+                    src="images/instagram_white.svg"
+                    alt="Instagram"
                     class="footer__social-icon"
-                    src="./images/instagram_white.svg"
-                    alt="logo instagram"
                   />
-                </div>
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <p class="footer__copyright">© 2024 Luis Eduardo Herrera</p>
+        <p class="footer__copyright">© 2024 luis eduardo herrera</p>
       </footer>
     </div>
   </body>

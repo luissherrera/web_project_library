@@ -329,6 +329,7 @@
 
   width: 220px;
   height: 40px;
+  flex-basis: ;
 }
 
 .step__title {
